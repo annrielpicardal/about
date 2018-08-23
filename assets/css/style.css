@@ -1,0 +1,665 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: darkgrey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+  .column
+  {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background-color: #181818;
+  }
+
+    #banner
+    {
+      width: 100%;
+      min-height: 70vh;
+      background: #111111;
+      margin-bottom: -10%;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+      #bannerInfo
+      {
+        text-align: center;
+      }
+
+        #bannerInfo > h1 
+        {
+          font-size: 60px;
+          font-weight: normal;
+        }
+
+        #bannerInfo > button
+        {
+          padding: 10px 20px;
+          margin-bottom: 50px;
+          background-color: dodgerblue;
+          border: none;
+          border-radius: 10px 5px;
+          color: white;
+        }
+
+          #bannerInfo > button > a
+          {
+            color: white;
+            text-decoration: none;
+          }
+
+          #bannerInfo > button:hover
+          {
+            background-color: #282828;
+            cursor: pointer;
+          }
+
+
+      #navBar a
+      {
+        padding: 5px 10px;
+        background-color: dodgerblue;
+        color: white;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border-style: none;
+        text-align: left;
+        width: 120px;
+        display: inline-block;
+        text-decoration: none;
+        right: -90px;
+        z-index: 10;
+      }
+
+        #navBar a:hover
+        {
+          right: -10px;
+          transition: 1s;
+          background-color: #282828;
+        }
+
+        #navBar i
+        {
+          color: white;
+          margin-right: 8px;
+        }
+
+        #menuHome
+        {
+          position: fixed;
+          top: 40%;
+          right: 0;
+        }
+
+        #menuServices
+        {
+          position: fixed;
+          top: 45%;
+          right: 0;
+        }
+
+        #menuPortfolio
+        {
+          position: fixed;
+          top: 50%;
+          right: 0;
+        }
+
+        #menuGallery
+        {
+          position: fixed;
+          top: 55%;
+          right: 0;
+        }
+
+        #menuExp
+        {
+          position: fixed;
+          top: 60%;
+          right: 0;
+        }
+
+        #menuContact
+        {
+          position: fixed;
+          top: 65%;
+          right: 0;
+        }
+
+
+    #information {
+      /*position: absolute;*/
+      max-height: 50vh;
+      background-color: #282828;
+      width: 70vw;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      z-index: 999;
+
+    }
+
+      #infoImage
+      {
+        object-fit: contain;
+      }
+
+      #infoImage img:hover
+      {
+        animation: shake 1s;
+        animation-iteration-count: infinite;
+      }
+
+      #information1
+      {
+        padding: 5% 5% 0;
+        list-style-type: none;
+        margin-left: 20%;
+      }
+
+        #information1 i
+        {
+          font-size: 140%;
+          margin-right: 5px;
+          /*color: dodgerblue;*/
+        }
+
+        #information1 li:hover
+        {
+          color: white;
+          cursor: pointer;
+        }
+
+        #information h2
+        {
+          font-size: 200%;
+          font-weight: bold;
+          margin: 5% 0 0;
+          padding-left: 20%;
+          padding-top: 2%;
+        }
+
+        #information p
+        {
+          padding-left: 20%;
+        }
+
+        #infoImage
+        {
+          text-align: right;
+        }
+
+          #infoImage img
+          {
+            height: 300px;
+            width: 80%;
+          }
+
+        #social
+        {
+          border-radius: 50%;
+          list-style-type: none;
+          display: inline-block;
+          margin-left: 20%;
+          margin-bottom: 5%;
+        }
+
+          #social li
+          {
+            display: inline;
+            padding: 20px;
+            margin-bottom: 15%;
+            /*background-color: yellow;*/
+          }
+
+          #social i
+          {
+            margin-top: 15px;
+            font-size: 20px;
+            color: dodgerblue;
+          }
+
+              #social i:hover
+              {
+                color: white;
+              }
+
+
+    #description
+    {
+      width:70vw;
+      min-height: 10vh;
+      text-align: center;
+      text-align: justify;
+      margin: 2% auto 0;
+    }
+
+      #ayie
+      {
+        color: dodgerblue;
+        font-weight: bold;
+      }
+
+    #services {
+      min-height: 100vh;
+      padding-bottom: 5%;
+      width: 70vw;
+      margin-bottom: 10px;
+       scroll-behavior: smooth;
+       overflow-y: hidden;
+    }
+
+      #services > .row > .column > h1
+      {
+        padding: 5% 0;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      #servicesInfo
+      {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+      }
+
+        #services1
+        {
+          padding: 5% 0;
+          text-align: center;
+          background-color: #282828;
+          padding: 15% 5% 0;
+          border-radius: 20px;
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        }
+
+          #services1:hover
+          {
+            background-color: black;
+          }
+
+          #services1 img
+          {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 20px;
+          }
+
+          #services1 p
+          {
+            padding: 2% 10%;
+            text-align: center;
+            /*text-align: justify;*/
+          }
+
+    #portFolio {
+      min-height: 100vh;
+      background-color: #282828;
+      width: 70vw;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    }
+
+      #portFolio h1
+      {
+        text-align: center;
+        padding: 5% 5% 0;
+        font-weight: bold;
+      }
+
+      #portfolioInfo
+      {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
+        padding: 5%;
+      }
+
+        #portfolio1 img
+        {
+          margin-bottom: 10px;
+          transition: .8s ease;
+          filter: saturate(0);
+        }
+
+        #portfolioImg:hover
+        {
+
+          transform: scale(0.9);
+          filter: saturate(1);
+        }
+
+
+    #experience {
+      min-height: 100vh;
+      /*background-color: #282828;*/
+      width: 70vw;
+      margin-bottom: 10px;
+    }
+
+      #timelineHeader
+      {
+        /*background-color: #282828;*/
+        font-weight: bold;
+      }
+          .timeline-panel
+          {
+            background-color: #282828;
+            opacity: 1;
+          }
+
+          .timeline-panel:hover
+          {
+            animation: shake 1s;
+            animation-iteration-count: infinite;
+            background-color: black;
+          }
+
+          .timeline {
+            list-style: none;
+            padding: 20px 0 20px;
+            position: relative;
+            }
+
+            .timeline:before {
+              top: 0;
+              bottom: 0;
+              position: absolute;
+              content: " ";
+              width: 3px;
+              background-color: #282828;
+              left: 50%;
+              margin-left: -1.5px;
+            }
+
+            .timeline > li {
+              margin-bottom: 20px;
+              position: relative;
+            }
+
+            .timeline > li:before,
+            .timeline > li:after {
+              content: " ";
+              display: table;
+            }
+
+            .timeline > li:after {
+              clear: both;
+            }
+
+            .timeline > li:before,
+            .timeline > li:after {
+              content: " ";
+              display: table;
+            }
+
+            .timeline > li:after {
+              clear: both;
+            }
+
+            .timeline > li > .timeline-panel {
+              width: 46%;
+              float: left;
+              /*border: 1px solid #d4d4d4;*/
+              border-radius: 2px;
+              padding: 20px;
+              position: relative;
+              -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+              box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            }
+
+            .timeline > li > .timeline-panel:before {
+              position: absolute;
+              top: 26px;
+              right: -15px;
+              display: inline-block;
+              border-top: 15px solid transparent;
+              border-left: 15px solid #ccc;
+              border-right: 0 solid #ccc;
+              border-bottom: 15px solid transparent;
+              content: " ";
+            }
+
+            .timeline > li > .timeline-panel:after {
+              position: absolute;
+              top: 27px;
+              right: -14px;
+              display: inline-block;
+              border-top: 14px solid transparent;
+              border-left: 14px solid #fff;
+              border-right: 0 solid #fff;
+              border-bottom: 14px solid transparent;
+              content: " ";
+            }
+
+            .timeline > li > .timeline-badge {
+              color: #fff;
+              width: 50px;
+              height: 50px;
+              line-height: 50px;
+              font-size: 1.4em;
+              text-align: center;
+              position: absolute;
+              top: 16px;
+              left: 50%;
+              margin-left: -25px;
+              background-color: #999999;
+              z-index: 100;
+              border-top-right-radius: 50%;
+              border-top-left-radius: 50%;
+              border-bottom-right-radius: 50%;
+              border-bottom-left-radius: 50%;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel {
+              float: right;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:before {
+              border-left-width: 0;
+              border-right-width: 15px;
+              left: -15px;
+              right: auto;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:after {
+              border-left-width: 0;
+              border-right-width: 14px;
+              left: -14px;
+              right: auto;
+            }
+
+            .timeline-badge.primary {
+              background-color: #2e6da4 !important;
+            }
+
+            .timeline-badge.success {
+              background-color: #3f903f !important;
+            }
+
+            .timeline-badge.warning {
+              background-color: #f0ad4e !important;
+            }
+
+            .timeline-badge.danger {
+              background-color: #d9534f !important;
+            }
+
+            .timeline-badge.info {
+              background-color: #5bc0de !important;
+            }
+
+            .timeline-title {
+              margin-top: 0;
+              color: inherit;
+              text-align: center;
+            }
+
+            .timeline-body > p,
+            .timeline-body > ul {
+              margin-bottom: 0;
+            }
+
+            .timeline-body > p + p {
+              margin-top: 5px;
+            }
+
+            #timelineHeader 
+            {
+              text-align: center;
+              padding: 5%;
+            }
+
+    #Gallery {
+      min-height: 100vh;
+      background-color: #282828;
+      width: 70vw;
+      margin-bottom: 10px;
+      margin: auto;
+    }
+
+      #myGallery
+      {
+        padding: 5%;
+        text-align: center;
+        background-color: #181818;
+        font-weight: bold;
+      }
+
+    /* Our Team*/
+
+    #ourTeam {
+      min-height: 100vh;
+      background-color: #282828;
+      width: 70vw;
+      margin-bottom: 10px;
+    }
+
+      #ourTeamHeader
+      {
+        padding: 5%;
+        text-align: center;
+        background-color: #181818;
+        font-weight: bold;
+      }
+
+      .teamImage
+      {
+        border: 2px
+      }
+
+        .teamImage img
+        {
+          filter: grayscale(100%);
+        }
+
+        .teamImage img:hover
+        {
+          filter: grayscale(0);
+        }
+
+      .teamInfo
+      {
+        padding: 15% 5% 5%;
+      }
+
+        .teamInfo h2
+        {
+          font-weight: bold;
+          color: dodgerblue;
+        }
+
+    #contactInfo {
+      min-height: 100vh;
+      /*background-color: #282828;*/
+      width: 70vw;
+      margin-bottom: 10px;
+    }
+
+      #contactHeader
+      {
+        font-weight: bold;
+        text-align: center;
+        padding: 5%;
+      }
+
+      #inputMessage
+      {
+        height: 200px;
+      }
+
+      #Submit
+      {
+        color: black;
+      }
+
+      #formContact
+      {
+        padding-top: 10px;
+      }
+
+        #formContact input
+        {
+          background-color: #282828;
+          border: 1px solid #282828;
+        }
+
+        #formContact button
+        {
+          background-color: #282828;
+          border: 1px solid #282828;
+          color: lightgrey;
+          padding: 5px;
+          border-radius: 5px;
+          width: 20%;
+        }
+
+          #formContact button:hover
+          {
+            background-color: dodgerblue;
+          }
+
+
+          #mapContent
+          {
+            height: 100%;
+            width: 100%;
+          }
+
+          #mapContent img
+          {
+            text-align: right;
+            height: 100%;
+            width: 100%;
+            padding: 5%;
+          }
+
+    #footer {
+      min-height: 5vh;
+      text-align: center;
+    }
+
+
+
+    /* Shake Action */
+    @keyframes shake
+    {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
